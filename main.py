@@ -1,5 +1,5 @@
 import networkx as nx
-import matplotzzlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 nodes = ["Python", "Java", "Programming language", "Package management"]
 edges = [
