@@ -2,6 +2,8 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 
+# Deprecated
+
 def get_data(nodes, edges):
     graph = nx.MultiDiGraph()
     graph.add_nodes_from(nodes)

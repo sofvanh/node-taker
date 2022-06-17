@@ -1,13 +1,6 @@
 import drawer_pyvis
 import json
 
-nodes = ["Python", "Java", "Programming language", "Package management"]
-edges = [
-    ("Python", "Programming language", {"title": "Python is a programming language"}),
-    ("Java", "Programming language", {"title": "Java is a programming language"}),
-    ("Java", "Package management", {"title": "Java requires package management"}),
-    ("Python", "Package management", {"title": "Python requires package management"})
-]
 
 def get_data_from_file():
     f = open("data.json", "r")
