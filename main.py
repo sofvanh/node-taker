@@ -1,19 +1,8 @@
 import drawer_pyvis
-import json
+import file_helper
 
 
-def get_data_from_file():
-    f = open("data.json", "r")
-    d = f.read()
-    f.close()
-    return json.loads(d)
-
-
-def write_data_to_file(data):
-    f = open("data.json", "w")
-    s = json.dumps(data, indent=2, sort_keys=True)
-    f.write(s)
-    f.close()
+# TODO add tracking of how the graph has grown over time
 
 
 def add_node(data, name):
@@ -29,7 +18,7 @@ if __name__ == '__main__':
     print("Welcome to your knowledge graph <3")
     print("Commands: 'n' for new node, 'e' for new edge, 's' for save & exit")
 
-    data = get_data_from_file()
+    data = file_helper.get_data_from_file("data.json")
     drawer_pyvis.draw_graph(data["nodes"], data["edges"])
 
     i = input("Enter command:")
@@ -53,5 +42,5 @@ if __name__ == '__main__':
 
         i = input("Enter command:")
 
-    write_data_to_file(data)
+    file_helper.write_data_to_file(data)
     print("Done! See you soon!")

@@ -1,0 +1,15 @@
+{
+  "nodes": {
+    "opacity": 0.6
+  },
+  "interaction": {
+    "hover": true,
+    "keyboard": {
+      "enabled": true
+    },
+    "tooltipDelay": 0
+  },
+  "physics": {
+    "minVelocity": 0.75
+  }
+}
