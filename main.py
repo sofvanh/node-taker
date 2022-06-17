@@ -1,4 +1,5 @@
 import drawer_pyvis
+import json
 
 nodes = ["Python", "Java", "Programming language", "Package management"]
 edges = [
@@ -8,13 +9,15 @@ edges = [
     ("Python", "Package management", {"title": "Python requires package management"})
 ]
 
+def get_data_from_file():
+    f = open("data.json", "r")
+    return json.loads(f.read())
+
+
 if __name__ == '__main__':
     print("We're testing out graphs :)\n")
 
-    #graph = get_data()
-    #draw_with_pyvis(graph)
-    #draw_graph(graph)
-
-    drawer_pyvis.draw_graph(nodes, edges)
+    data = get_data_from_file()
+    drawer_pyvis.draw_graph(data["nodes"], data["edges"])
 
     print("\nDone! See you soon!")

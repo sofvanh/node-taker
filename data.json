@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    "Python",
+    "Java",
+    "Programming language",
+    "Package management",
+    "Poetry"
+  ],
+  "edges": [
+    {
+      "u": "Python",
+      "v": "Programming language",
+      "title": "Python is a programming language"
+    },
+    {
+      "u": "Java",
+      "v": "Programming language",
+      "title": "Java is a programming language"
+    },
+    {
+      "u": "Java",
+      "v": "Package management",
+      "title": "Java requires package management"
+    },
+    {
+      "u": "Python",
+      "v": "Package management",
+      "title": "Python requires package management"
+    }
+  ]
+}

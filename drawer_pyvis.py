@@ -10,4 +10,4 @@ def draw_graph(nodes, edges):
 
 
 def add_edge(net, edge):
-    net.add_edge(edge[0], edge[1], title=edge[2]["title"])
+    net.add_edge(edge['u'], edge['v'], title=edge["title"])
