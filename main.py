@@ -11,7 +11,16 @@ edges = [
 
 def get_data_from_file():
     f = open("data.json", "r")
-    return json.loads(f.read())
+    d = f.read()
+    f.close()
+    return json.loads(d)
+
+
+def write_data_to_file(data):
+    f = open("data.json", "w")
+    s = json.dumps(data, indent=2, sort_keys=True)
+    f.write(s)
+    f.close()
 
 
 if __name__ == '__main__':
@@ -19,5 +28,6 @@ if __name__ == '__main__':
 
     data = get_data_from_file()
     drawer_pyvis.draw_graph(data["nodes"], data["edges"])
+    write_data_to_file(data)
 
     print("\nDone! See you soon!")
