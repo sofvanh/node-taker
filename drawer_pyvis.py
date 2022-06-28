@@ -3,7 +3,7 @@ import file_helper
 
 
 def draw_graph(nodes, edges):
-    net = Network(height='700px', width='700px')
+    net = Network(height='700px', width='11x00px')
     net.add_nodes(nodes)
     for edge in edges:
         add_edge(net, edge)
