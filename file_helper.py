@@ -12,8 +12,8 @@ def get_data_from_file(file):
     return json.loads(get_raw_string_from_file(file))
 
 
-def write_data_to_file(data):
-    f = open("data.json", "w")
+def write_data_to_file(file, data):
+    f = open(file, "w")
     s = json.dumps(data, indent=2, sort_keys=True)
     f.write(s)
     f.close()
