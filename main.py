@@ -1,5 +1,4 @@
-import drawer_pyvis
-import file_helper
+from helpers import drawer_pyvis, file_helper
 
 # TODO add tracking of how the graph has grown over time
 
