@@ -1,5 +1,5 @@
 from pyvis.network import Network
-import file_helper
+import helpers.file_helper as file
 
 
 def draw_graph(nodes, edges):
@@ -7,7 +7,7 @@ def draw_graph(nodes, edges):
     net.add_nodes(nodes)
     for edge in edges:
         add_edge(net, edge)
-    net.set_options(options=file_helper.get_raw_string_from_file("../options.json"))
+    net.set_options(options=file.get_raw_string_from_file("options.json"))
     net.show('graph-notes.html')
 
 
