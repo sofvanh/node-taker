@@ -19,6 +19,6 @@ Note taking **simplified**, more **intuitive**, and more **memorable**.
 - Merge maps together
   - See how different systems are actually closely related
   - Over time, build a massive visual representation of how everything works together, from physics to nutrition to world history and beyond
-- Future: Get insights on overlooked concepts and connections from your AI assistance
+- Future: Get insights on overlooked concepts and connections from your AI assistant
 
 > Don't take notes; Take nodes!
