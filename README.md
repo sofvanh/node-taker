@@ -22,3 +22,8 @@ Note taking **simplified**, more **intuitive**, and more **memorable**.
 - Future: Get insights on overlooked concepts and connections from your AI assistant
 
 > Don't take notes; Take nodes!
+
+## How-to
+
+App is currently in early alpha.
+I run it with `poetry run python main.py` but IDK if that will work for you.
